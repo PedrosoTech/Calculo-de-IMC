@@ -1,0 +1,45 @@
+body {
+    background-color: #121212;
+  }
+  
+  .card {
+    background-color: #1f1f1f;
+    color: #fff;
+  }
+  
+  .form-label {
+    color: #ddd;
+  }
+  
+  input::placeholder {
+    color: #888;
+  }
+  
+  input.form-control {
+    background-color: #2b2b2b;
+    color: #fff;
+    border: none;
+  }
+  
+  input.form-control:focus {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #007bff;
+  }
+  
+  button {
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .result {
+    font-size: 1.2rem;
+  }
+  
+  #alerta {
+    font-size: 1.3rem;
+  }
+  

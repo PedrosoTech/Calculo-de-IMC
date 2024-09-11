@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Massa Corporal</title>
+  
+  <!-- Link para o Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Link para o CSS Personalizado -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Link para ícones do Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-dark text-light">
+  <div class="container py-5">
+    <div class="card bg-secondary text-center rounded shadow-lg p-4">
+      <h1 class="mb-4">Calculadora de Massa Corporal</h1>
+      
+      <form id="imcForm" class="needs-validation" novalidate>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="inputPeso" class="form-label">Peso (kg)</label>
+            <input type="number" class="form-control rounded-pill" id="inputPeso" placeholder="Ex: 70" required>
+          </div>
+          <div class="col-md-6">
+            <label for="inputAltura" class="form-label">Altura (cm)</label>
+            <input type="number" class="form-control rounded-pill" id="inputAltura" placeholder="Ex: 170" required>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-md-12">
+            <label for="inputIdade" class="form-label">Idade</label>
+            <input type="number" class="form-control rounded-pill" id="inputIdade" placeholder="Ex: 25" required>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary rounded-pill w-100">Calcular</button>
+      </form>
+
+      <div class="result mt-4">
+        <p id="resultado"></p>
+        <p id="alerta" class="fw-bold"></p>
+        <!-- Aviso em vermelho -->
+        <p id="aviso" class="text-danger mt-3">
+          AVISO: Se você acha que o intervalo de peso ideal não se aplica à sua constituição, pode ser útil considerar outras métricas, como percentual de gordura corporal ou consultar um profissional de saúde.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Link para o Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Link para o JavaScript Personalizado -->
+  <script src="script.js"></script>
+</body>
+</html>
